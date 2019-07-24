@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- author:maaami98-->
+<html>
+    <head>
+        <title>Coslat Firewall SMS Authentication System</title>
+        
+        <script>
+          
+        </script>
+        <style>
+            #cikis { display: none; }
+        </style>
+    </head>
+    <body>
+
+		 <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+		 <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-firestore.js"></script>
+		<script>
+		var config = {
+               <!--sizin config veriniz-->
+            };
+            firebase.initializeApp(config);
+			
+  
+
+       
+			</script>
+		Durum:<label id="durum"></label><br>
+        <input id='num' placeholder="Telefon Numarası Giriniz">
+        
+        <button onclick="auth()">Gönder</button>
+        <label></label>
+        <div id="recaptcha"></div>
+		<input id="kod" placeholder="Dogrulama Kodu"/>
+		<button onclick="cvp()" >Doğrula</button>
+		<button id="cikis" onclick="cikis()" >Çıkış Yap</button>
+        <script src="sms.js"></script>
+    </body>
+</html>
